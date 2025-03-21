@@ -1,0 +1,11 @@
+[package]
+name = "stm32-opts"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+clap = { version = "4.5.32", features = ["derive"] }
+probe-rs = { version = "0.27.0" }
+stm32-metapac = { version = "16.0.0", features = ["metadata", "stm32f767zi"]}
+tracing = "0.1.41"
+tracing-subscriber = { version = "0.3.19", features = ["env-filter"] }
